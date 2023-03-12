@@ -7,10 +7,19 @@
             <description>Minor updates and improvements.</description>
             <pubDate>Sun, 30 Dec 2018 12:00:00 +0000</pubDate>
             <enclosure url="https://play.google.com/store/apps/details?id=com.semyapp" sparkle:version="3.6.0" sparkle:os="android" />		
-	    <enclosure url="https://apps.apple.com/us/app/semy/id1262321176" sparkle:version="3.6.0" sparkle:os="ios" />					  
-
-					  <!-- You should block the modal this way-->	<sparkle:tags> <sparkle:criticalUpdate /> </sparkle:tags> 
+=
+	<sparkle:tags> <sparkle:criticalUpdate /> </sparkle:tags> 
 
         </item>
+	    <item>
+	    <title>Version 3.6.0</title>
+            <description>Minor updates and improvements.</description>
+            <pubDate>Sun, 30 Dec 2018 12:00:00 +0000</pubDate>
+	    <enclosure url="https://apps.apple.com/us/app/semy/id1262321176" sparkle:version="3.6.0" sparkle:os="ios" />					  
+
+	 <sparkle:tags> <sparkle:criticalUpdate /> </sparkle:tags> 
+
+	    
+	    </item>
     </channel>
 </rss>
