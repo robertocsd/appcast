@@ -1,25 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
-    <channel>
-        <title>Semy - Appcast</title>
-        <item>
-            <title>Version 3.6.0</title>
-            <description>Minor updates and improvements.</description>
-            <pubDate>Sun, 30 Dec 2018 12:00:00 +0000</pubDate>
-            <enclosure url="https://play.google.com/store/apps/details?id=com.semyapp" sparkle:version="3.6.0" sparkle:os="android" />		
-=
-	<sparkle:tags> <sparkle:criticalUpdate /> </sparkle:tags> 
-
-        </item>
-	    <item>
-	    <title>Version 3.6.0</title>
-            <description>Minor updates and improvements.</description>
-            <pubDate>Sun, 30 Dec 2018 12:00:00 +0000</pubDate>
-	    <enclosure url="https://apps.apple.com/us/app/semy/id1262321176" sparkle:version="4.6.0" sparkle:os="ios" />					  
-
-	 <sparkle:tags> <sparkle:criticalUpdate /> </sparkle:tags> 
-
-	    
-	    </item>
-    </channel>
-</rss>
+{
+    "id": "hello_world",
+    "screen": false,
+    "channels": [],
+    "requires": [],
+    "inputs": {
+      "title": {
+        "source": "inline",
+        "value": "Hello World"
+      },
+      "counter": {
+        "source": "globalState",
+        "values": {
+          "defaultValue": "0"
+        }
+      }
+    },
+    "structure": {
+      "type": "column",
+      "values": {
+        "mainAxisAlignment": "spaceAround",
+        "children": [
+          {
+            "type": "text",
+            "values": {
+              "text": "${title}"
+            }
+          },
+          {
+            "type": "row",
+            "values": {
+              "children": [
+                {
+                  "type": "text",
+                  "values": {
+                    "text": "Current count: "
+                  }
+                },
+                {
+                  "type": "text",
+                  "values": {
+                    "text": "${counter}"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "button",
+            "values": {
+              "text": "Increment",
+              "onTap": [
+                {
+                  "handler": "incrementCounter",
+                  "values": {
+                    "name": "counter"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
