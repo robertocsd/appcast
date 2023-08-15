@@ -6,7 +6,7 @@
     "inputs": {
       "title": {
         "source": "inline",
-        "value": "Hello World"
+        "value": "ROBERTO"
       },
       "counter": {
         "source": "globalState",
