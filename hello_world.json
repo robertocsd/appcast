@@ -16,50 +16,56 @@
       }
     },
     "structure": {
-      "type": "column",
+  "type": "container",
+  "values": {
+    "width": 211,
+    "height": 115,
+    "clipBehavior": "antiAlias",
+    "decoration": {
+      "borderRadius": 0,
+      "color": {
+        "alpha": 255,
+        "red": 35,
+        "green": 36,
+        "blue": 39
+      }
+    },
+    "child": {
+      "type": "container",
       "values": {
-        "mainAxisAlignment": "spaceAround",
-        "children": [
-          {
-            "type": "text",
-            "values": {
-              "text": "${title}"
-            }
-          },
-          {
-            "type": "row",
-            "values": {
-              "children": [
-                {
-                  "type": "text",
-                  "values": {
-                    "text": "Current count: "
-                  }
-                },
-                {
-                  "type": "text",
-                  "values": {
-                    "text": "${counter}"
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "type": "button",
-            "values": {
-              "text": "CR7",
-              "onTap": [
-                {
-                  "handler": "incrementCounter",
-                  "values": {
-                    "name": "counter"
+        "child": {
+          "type": "row",
+          "values": {
+            "mainAxisSize": "min",
+            "mainAxisAlignment": "center",
+            "crossAxisAlignment": "center",
+            "children": [
+              {
+                "type": "text",
+                "values": {
+                  "text": "Hello World",
+                  "textAlign": "left",
+                  "style": {
+                    "color": {
+                      "alpha": 255,
+                      "red": 255,
+                      "green": 255,
+                      "blue": 255
+                    },
+                    "fontFamily": "Inter",
+                    "fontWeight": 3,
+                    "fontSize": 24,
+                    "letterSpacing": 0,
                   }
                 }
-              ]
-            }
+              }
+            ]
           }
-        ]
+        }
       }
     }
   }
+}
+}
+    
+  
