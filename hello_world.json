@@ -4,69 +4,62 @@
     "channels": [],
     "requires": [],
     "inputs": {
-        "title": {
-            "source": "inline",
-            "value": "ROBERTO"
-        },
-        "counter": {
-            "source": "globalState",
-            "values": {
-                "defaultValue": "0"
-            }
+      "title": {
+        "source": "inline",
+        "value": "HALO-hello"
+      },
+      "counter": {
+        "source": "globalState",
+        "values": {
+          "defaultValue": "0"
         }
+      }
     },
     "structure": {
-        "type": "container",
-        "values": {
-            "width": 211,
-            "height": 115,
-            "clipBehavior": "antiAlias",
-            "decoration": {
-                "borderRadius": 0,
-                "color": {
-                    "alpha": 255,
-                    "red": 35,
-                    "green": 36,
-                    "blue": 39
-                }
-            },
-            "child": {
-                "type": "container",
-                "values": {
-                    "child": {
-                        "type": "row",
-                        "values": {
-                            "mainAxisSize": "min",
-                            "mainAxisAlignment": "center",
-                            "crossAxisAlignment": "center",
-                            "children": [
-                                {
-                                    "type": "text",
-                                    "values": {
-                                        "text": "Hello World",
-                                        "textAlign": "left",
-                                        "style": {
-                                            "color": {
-                                                "alpha": 255,
-                                                "red": 255,
-                                                "green": 255,
-                                                "blue": 255
-                                            },
-                                            "fontFamily": "Inter",
-                                            "fontWeight": 300,
-                                            "fontSize": 24,
-                                            "letterSpacing": 0
-                                        }
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                }
+      "type": "column",
+      "values": {
+        "mainAxisAlignment": "spaceAround",
+        "children": [
+          {
+            "type": "text",
+            "values": {
+              "text": "${title}"
             }
-        }
+          },
+          {
+            "type": "row",
+            "values": {
+              "children": [
+                {
+                  "type": "text",
+                  "values": {
+                    "text": "Current count: "
+                  }
+                },
+                {
+                  "type": "text",
+                  "values": {
+                    "text": "${counter}"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "button",
+            "values": {
+              "text": "Increment",
+              "onTap": [
+                {
+                  "handler": "incrementCounter",
+                  "values": {
+                    "name": "counter"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     }
-}
-
-    
-  
+  }
